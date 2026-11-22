@@ -59,4 +59,134 @@
         <a href="#" class="button">Click Me</a>
     </div>
 </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Simple Page</title>
+    <style>
+        /* CSS Styles */
+        :root {
+            --primary-color: #446688;
+            --secondary-color: #334d66;
+            --accent-color: #5a8bb8;
+            --light-gray: #f8f9fa;
+            --text-color: #333;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-gray);
+            color: var(--text-color);
+        }
+        
+        .container {
+            width: 85%;
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        
+        h1 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .feature-list {
+            padding-left: 20px;
+            margin: 20px 0;
+        }
+        
+        .feature-list li {
+            margin-bottom: 8px;
+            position: relative;
+            list-style-type: none;
+            padding-left: 25px;
+        }
+        
+        .feature-list li:before {
+            content: "✓";
+            color: var(--accent-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        
+        .button {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .button:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .button-outline {
+            background: transparent;
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .button-outline:hover {
+            background: rgba(68, 102, 136, 0.1);
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+            
+            .button-group {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Enhanced Page</h1>
+        <p>This is an improved version of the basic HTML/CSS example with modern styling touches.</p>
+        
+        <ul class="feature-list">
+            <li>Responsive container with maximum width</li>
+            <li>Modern font stack for better readability</li>
+            <li>CSS variables for consistent colors</li>
+            <li>Styled list with custom checkmarks</li>
+            <li>Multiple button styles</li>
+            <li>Smooth hover animations</li>
+            <li>Mobile-friendly layout</li>
+        </ul>
+        
+        <div class="button-group">
+            <a href="#" class="button">Primary Action</a>
+            <a href="#" class="button button-outline">Secondary Action</a>
+        </div>
+    </div>
+</body>
 </html>
